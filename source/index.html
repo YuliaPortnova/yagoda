@@ -1,14 +1,226 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
+<html lang="ru">
 
-    <script src="./js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous"> -->
+  <title>HTML Academy: Ягода</title>
+  <meta name="description" content="Проект HTML Academy: Ягода. HTML и CSS. Адаптивная вёрстка и автоматизация. Грейдирование.">
+  <!-- <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">  --> <!-- 180×180 -->
+  <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+</head>
+
+<body class="page">
+  <header class="page__main-header main-header no-js">
+    <nav class="main-header__nav">
+      <span class="main-header__logo logo">
+        <img class="logo__img" src="" alt="Логотип интернет-магазина Ягода." width="52" height="52">
+      </span>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть или закрыть меню навигации по сайту.</span>
+      </button>
+      <ul class="main-header__nav-list">
+        <li class="main-header__nav-item">
+          <a class="main-header__nav-link" href="javascript:undefined;">Каталог</a>
+        </li>
+        <li class="main-header__nav-item">
+          <a class="main-header__nav-link" href="javascript:undefined;">Новости</a>
+        </li>
+        <li class="main-header__nav-item">
+          <a class="main-header__nav-link" href="javascript:undefined;">Контакты</a>
+        </li>
+        <li class="main-header__nav-item">
+          <a class="main-header__nav-link" href="form.html">Заказать</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page__page-main">
+    <section class="page__hero-index hero-index">
+      <div class="hero-index__wrapper">
+        <h1 class="hero-index__title title">Ягоды с доставкой</h1>
+        <ul class="hero-index__list">
+          <li class="hero-index__item">Отборные ягоды</li>
+          <li class="hero-index__item">Натуральный вкус сохранён методом шоковой заморозки</li>
+          <li class="hero-index__item">Доставка по Санкт-Петербургу</li>
+        </ul>
+        <a class="hero-index__button button" href="form.html">Заказать</a>
+      </div>
+    </section>
+    <section class="page__catalog catalog">
+      <div class="catalog__wrapper">
+        <h2 class="catalog__title title">Каталог</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
+              <img class="catalog__img" src="" alt="">
+            </a>
+            <a class="catalog__link-subtitle" href="javascript:undefined;">
+              <h3 class="catalog__subtitle">Малина</h3>
+            </a>
+            <span class="catalog__price">350 ₽</span>
+            <span class="catalog__price">за 1 кг</span>
+            <a class="catalog__button button" href="form.html">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
+              <img class="catalog__img" src="" alt="">
+            </a>
+            <a class="catalog__link-subtitle" href="javascript:undefined;">
+              <h3 class="catalog__subtitle">Ежевика</h3>
+            </a>
+            <span class="catalog__price">550 ₽</span>
+            <span class="catalog__price">за 1 кг</span>
+            <a class="catalog__button button" href="form.html">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
+              <img class="catalog__img" src="" alt="">
+            </a>
+            <a class="catalog__link-subtitle" href="javascript:undefined;">
+              <h3 class="catalog__subtitle">Брусника</h3>
+            </a>
+            <span class="catalog__price">390 ₽</span>
+            <span class="catalog__price">за 1 кг</span>
+            <a class="catalog__button button" href="form.html">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
+              <img class="catalog__img" src="" alt="">
+            </a>
+            <a class="catalog__link-subtitle" href="javascript:undefined;">
+              <h3 class="catalog__subtitle">Клубника</h3>
+            </a>
+            <span class="catalog__price">450 ₽</span>
+            <span class="catalog__price">за 1 кг</span>
+            <a class="catalog__button button" href="form.html">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
+              <img class="catalog__img" src="" alt="">
+            </a>
+            <a class="catalog__link-subtitle" href="javascript:undefined;">
+              <h3 class="catalog__subtitle">Вишня</h3>
+            </a>
+            <span class="catalog__price">375 ₽</span>
+            <span class="catalog__price">за 1 кг</span>
+            <a class="catalog__button button" href="form.html">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
+              <img class="catalog__img" src="" alt="">
+            </a>
+            <a class="catalog__link-subtitle" href="javascript:undefined;">
+              <h3 class="catalog__subtitle">Крыжовник</h3>
+            </a>
+            <span class="catalog__price">300 ₽</span>
+            <span class="catalog__price">за 1 кг</span>
+            <a class="catalog__button button" href="form.html">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
+              <img class="catalog__img" src="" alt="">
+            </a>
+            <a class="catalog__link-subtitle" href="javascript:undefined;">
+              <h3 class="catalog__subtitle">Голубика</h3>
+            </a>
+            <span class="catalog__price">510 ₽</span>
+            <span class="catalog__price">за 1 кг</span>
+            <a class="catalog__button button" href="form.html">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
+              <img class="catalog__img" src="" alt="">
+            </a>
+            <a class="catalog__link-subtitle" href="javascript:undefined;">
+              <h3 class="catalog__subtitle">Клюква</h3>
+            </a>
+            <span class="catalog__price">320 ₽</span>
+            <span class="catalog__price">за 1 кг</span>
+            <a class="catalog__button button" href="form.html">Заказать</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page__news news">
+      <div class="news__wrapper">
+        <h2 class="news__title title">Что новенького?</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <h3 class="news__title">Новый урожай клубники</h3>
+            <p class="news__text">К нам поступила свежая сочная ароматная клубника из Алтайского края. Крупные отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.</p>
+            <time datetime="2022-06-22">22 июня 2022</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">В июне дарим скидку 15% на все свежие ягоды</h3>
+            <p class="news__text">Свежие ягоды урожая этого года со скидкой 15%. Клубнику, малину, голубику, вишню доставим от 200 гр.</p>
+            <time datetime="2022-06-15">15 июня 2022</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Микс из ягод</h3>
+            <p class="news__text">Мы приготовим для вас смеси из различных замороженных ягод по вашему пожеланию. Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить их естественный вкус и аромат.</p>
+            <time datetime="2022-06-02">02 июня 2022</time>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page__contacts contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title title">Где забрать ягоды?</h2>
+        <address class="contacts__address">
+          <p class="contacts__description">Забери ягоды с нашего склада по адресу:</p>
+          <p class="contacts__text contacts__text--address">Набережная Обводного канала, 101</p>
+          <a class="contacts__text contacts__text--phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
+          <a class="contacts__text contacts__text--email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
+        </address>
+      </div>
+      <div class="contacts__map">
+        <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1323589223423!2d30.328649077075422!3d59.91335066413649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1693837454451!5m2!1sru!2sru" width="320" height="372" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Карта расположения магазина Ягода."></iframe>
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" width="527" height="457">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" width="768" height="457">
+          <source type="image/webp" srcset="img/content/map-mobile@1x.webp 1x, img/content/map-mobile@2x.webp 2x" width="320" height="454">
+          <source media="(min-width: 1150px)" srcset="img/content/map-desktop@1x.png 1x, img/content/map-desktop@2x.png 2x" width="527" height="457">
+          <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.png 1x, img/content/map-tablet@2x.png 2x" width="768" height="457">
+          <img class="contacts__map-image" src="img/content/map-mobile@1x.png" srcset="img/content/map-mobile@2x.png 2x" width="320" height="454" alt="Карта расположения магазина Мишка." loading="lazy"> -->
+        </picture>
+      </div>
+    </section>
+  </main>
+  <footer class="page__page-footer page-footer">
+    <div class="page-footer__wrapper">
+      <span class="page-footer__logo logo">
+        <img class="logo__img" src="" alt="Логотип интернет-магазина Ягода." width="52" height="52">
+      </span>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
+            <span class="visually-hidden">Ягода в Телеграм.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
+            <span class="visually-hidden">Ягода во Вконтакте.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="javascript:undefined;" target="_blank" rel="nofollow noopener">
+            <span class="visually-hidden">Ягода на Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener" aria-label="Перейти на сайт компании-разработчика HTML Academy.">
+        <span class="page-footer__copyright-text">HTML Academy</span>
+        <img class="page-footer__copyright-logo" src="" alt="Логотип HTML Academy." width="20" height="24">
+      </a>
+    </div>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>
