@@ -1,7 +1,24 @@
-/* GLOBAL */
+//Переменные
 @import "global/variables";
-@import "global/global";
-@import "global/fonts";
 
-/* BLOCKS */
-@import "blocks/header";
+// Базовые стили
+@import "global/fonts";
+@import "global/global";
+@import "global/utils";
+
+// Блоки компонентов
+@import "blocks/page";
+@import "blocks/button";
+@import "blocks/title";
+@import "blocks/hero-index";
+@import "blocks/hero-inner";
+@import "blocks/catalog";
+@import "blocks/news";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/social";
+@import "blocks/input";
+@import "blocks/radio-input";
+@import "blocks/checkbox-input";
+@import "blocks/main-header";
+@import "blocks/page-footer";

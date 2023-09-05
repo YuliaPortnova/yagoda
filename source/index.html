@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Ягода</title>
   <meta name="description" content="Проект HTML Academy: Ягода. HTML и CSS. Адаптивная вёрстка и автоматизация. Грейдирование.">
   <!-- <link rel="icon" href="favicon.ico">
@@ -19,7 +19,7 @@
   <header class="page__main-header main-header no-js">
     <nav class="main-header__nav">
       <span class="main-header__logo logo">
-        <img class="logo__img" src="" alt="Логотип интернет-магазина Ягода." width="52" height="52">
+        <img class="logo__img" src="img/content/adaptive-svg/logo-yagoda.svg" alt="Логотип интернет-магазина Ягода." width="52" height="52">
       </span>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть или закрыть меню навигации по сайту.</span>
@@ -49,7 +49,7 @@
           <li class="hero-index__item">Натуральный вкус сохранён методом шоковой заморозки</li>
           <li class="hero-index__item">Доставка по&nbsp;Санкт-Петербургу</li>
         </ul>
-        <a class="hero-index__button button" href="form.html">Заказать</a>
+        <a class="hero-index__button button button--size-xl" href="form.html">Заказать</a>
       </div>
     </section>
     <section class="page__catalog catalog">
@@ -57,8 +57,8 @@
         <h2 class="catalog__title title">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
-              <img class="catalog__img" src="" alt="">
+            <a class="catalog__link-img" href="javascript:undefined;">
+              <img class="catalog__img" src="img/content/catalog/raspberries@1x.jpg" alt="">
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Малина</h3>
@@ -68,8 +68,8 @@
             <a class="catalog__button button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
-              <img class="catalog__img" src="" alt="">
+            <a class="catalog__link-img" href="javascript:undefined;">
+              <img class="catalog__img" src="img/content/catalog/blackberries@1x.jpg" alt="">
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Ежевика</h3>
@@ -79,8 +79,8 @@
             <a class="catalog__button button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
-              <img class="catalog__img" src="" alt="">
+            <a class="catalog__link-img" href="javascript:undefined;">
+              <img class="catalog__img" src="img/content/catalog/cowberries@1x.jpg" alt="">
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Брусника</h3>
@@ -90,8 +90,8 @@
             <a class="catalog__button button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
-              <img class="catalog__img" src="" alt="">
+            <a class="catalog__link-img" href="javascript:undefined;">
+              <img class="catalog__img" src="img/content/catalog/strawberries@1x.jpg" alt="">
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Клубника</h3>
@@ -101,8 +101,8 @@
             <a class="catalog__button button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
-              <img class="catalog__img" src="" alt="">
+            <a class="catalog__link-img" href="javascript:undefined;">
+              <img class="catalog__img" src="img/content/catalog/cherries@1x.jpg" alt="">
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Вишня</h3>
@@ -112,8 +112,8 @@
             <a class="catalog__button button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
-              <img class="catalog__img" src="" alt="">
+            <a class="catalog__link-img" href="javascript:undefined;">
+              <img class="catalog__img" src="img/content/catalog/gooseberries@1x.jpg" alt="">
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Крыжовник</h3>
@@ -123,8 +123,8 @@
             <a class="catalog__button button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
-              <img class="catalog__img" src="" alt="">
+            <a class="catalog__link-img" href="javascript:undefined;">
+              <img class="catalog__img" src="img/content/catalog/blueberries@1x.jpg" alt="">
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Голубика</h3>
@@ -134,8 +134,8 @@
             <a class="catalog__button button" href="form.html">Заказать</a>
           </li>
           <li class="catalog__item">
-            <a class="catalog__link-img" href="javascript:undefined;" alt="Переход на страницу товара.">
-              <img class="catalog__img" src="" alt="">
+            <a class="catalog__link-img" href="javascript:undefined;">
+              <img class="catalog__img" src="img/content/catalog/cranberries@1x.jpg" alt="">
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Клюква</h3>
@@ -154,17 +154,17 @@
           <li class="news__item">
             <h3 class="news__title">Новый урожай клубники</h3>
             <p class="news__text">К&nbsp;нам поступила свежая сочная ароматная клубника из&nbsp;Алтайского края. Крупные отборные ягоды можно приобрести свежими от&nbsp;200&nbsp;гр, или замороженными от&nbsp;1&nbsp;кг. Поторопитесь, сезон клубники короткий и&nbsp;свежие ягоды скоро закончатся.</p>
-            <time datetime="2022-06-22">22&nbsp;июня 2022</time>
+            <time class="news__date" datetime="2022-06-22">22&nbsp;июня 2022</time>
           </li>
           <li class="news__item">
             <h3 class="news__title">В&nbsp;июне дарим скидку 15% на&nbsp;все свежие ягоды</h3>
             <p class="news__text">Свежие ягоды урожая этого года со&nbsp;скидкой 15%. Клубнику, малину, голубику, вишню доставим от&nbsp;200&nbsp;гр.</p>
-            <time datetime="2022-06-15">15&nbsp;июня 2022</time>
+            <time class="news__date" datetime="2022-06-15">15&nbsp;июня 2022</time>
           </li>
           <li class="news__item">
             <h3 class="news__title">Микс из&nbsp;ягод</h3>
             <p class="news__text">Мы&nbsp;приготовим для вас смеси из&nbsp;различных замороженных ягод по&nbsp;вашему пожеланию. Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить их&nbsp;естественный вкус и&nbsp;аромат.</p>
-            <time datetime="2022-06-02">02&nbsp;июня 2022</time>
+            <time class="news__date" datetime="2022-06-02">02&nbsp;июня 2022</time>
           </li>
         </ul>
       </div>
@@ -182,12 +182,12 @@
       <div class="contacts__map">
         <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1323589223423!2d30.328649077075422!3d59.91335066413649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1693837454451!5m2!1sru!2sru" width="320" height="372" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Карта расположения магазина Ягода."></iframe>
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" width="527" height="457">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" width="768" height="457">
-          <source type="image/webp" srcset="img/content/map-mobile@1x.webp 1x, img/content/map-mobile@2x.webp 2x" width="320" height="454">
-          <source media="(min-width: 1150px)" srcset="img/content/map-desktop@1x.png 1x, img/content/map-desktop@2x.png 2x" width="527" height="457">
-          <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.png 1x, img/content/map-tablet@2x.png 2x" width="768" height="457">
-          <img class="contacts__map-image" src="img/content/map-mobile@1x.png" srcset="img/content/map-mobile@2x.png 2x" width="320" height="454" alt="Карта расположения магазина Мишка." loading="lazy"> -->
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" width="522" height="372">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" width="768" height="372">
+          <source type="image/webp" srcset="img/content/map-mobile@1x.webp 1x, img/content/map-mobile@2x.webp 2x" width="320" height="372">
+          <source media="(min-width: 1440px)" srcset="img/content/map-desktop@1x.png 1x, img/content/map-desktop@2x.png 2x" width="522" height="372">
+          <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.png 1x, img/content/map-tablet@2x.png 2x" width="768" height="372">
+          <img class="contacts__map-image" src="img/content/map-mobile@1x.png" srcset="img/content/map-mobile@2x.png 2x" width="320" height="372" alt="Карта расположения магазина Ягода." loading="lazy">
         </picture>
       </div>
     </section>
@@ -195,7 +195,7 @@
   <footer class="page__page-footer page-footer">
     <div class="page-footer__wrapper">
       <span class="page-footer__logo logo">
-        <img class="logo__img" src="" alt="Логотип интернет-магазина Ягода." width="52" height="52">
+        <img class="logo__img" src="img/content/adaptive-svg/logo-yagoda.svg" alt="Логотип интернет-магазина Ягода." width="52" height="52">
       </span>
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -216,7 +216,7 @@
       </ul>
       <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener" aria-label="Перейти на сайт компании-разработчика HTML Academy.">
         <span class="page-footer__copyright-text">HTML Academy</span>
-        <img class="page-footer__copyright-logo" src="" alt="Логотип HTML Academy." width="20" height="24">
+        <img class="page-footer__copyright-logo" src="img/content/htmlacademy.svg" alt="Логотип HTML Academy." width="20" height="24">
       </a>
     </div>
   </footer>

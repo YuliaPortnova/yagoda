@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/raleway-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/comfortaa-400.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Ягода, страница формы</title>
   <meta name="description" content="Проект HTML Academy: Ягода. HTML и CSS. Адаптивная вёрстка и автоматизация. Грейдирование. Страница формы">
   <!-- <link rel="icon" href="favicon.ico">
@@ -19,7 +19,7 @@
   <header class="page__main-header main-header no-js">
     <nav class="main-header__nav">
       <a class="main-header__logo logo" href="index.html" aria-label="Перейти на главную страницу интернет-магазина Ягода.">
-        <img class="logo__img" src="" alt="Логотип интернет-магазина Ягода." width="52" height="52">
+        <img class="logo__img" src="img/content/adaptive-svg/logo-yagoda.svg" alt="Логотип интернет-магазина Ягода." width="52" height="52">
       </a>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть или закрыть меню навигации по сайту.</span>
@@ -43,7 +43,7 @@
   <main class="page__page-main">
     <section class="page__hero-inner hero-inner">
       <div class="hero-inner__wrapper">
-        <h1 class="hero-inner__title">Закажи ягоды</h1>
+        <h1 class="hero-inner__title title">Закажи ягоды</h1>
         <p class="hero-inner__text">Мы&nbsp;соберем для вас ягоды и&nbsp;доставим их&nbsp;в&nbsp;удобном для вас виде&nbsp;&mdash; свежими или замороженными</p>
       </div>
     </section>
@@ -188,14 +188,14 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__group form__group--comment">
+      <fieldset class="form__group form__group--comment input">
         <legend class="visually-hidden">Дополнительная информация.</legend>
         <label class="input__label">
-          <span class="input__text">Пожелания к&nbsp;заказу</span>
+          <span class="input__text input__text--size-small">Пожелания к&nbsp;заказу</span>
           <textarea class="input__input input__textarea input__textarea--comment" name="comment" placeholder="Чем мы можем вам помочь?"></textarea>
         </label>
       </fieldset>
-      <button class="form__button button" type="submit">Заказать</button>
+      <button class="form__button button button--size-xl" type="submit">Заказать</button>
     </form>
     <section class="page__contacts contacts">
       <div class="contacts__wrapper">
@@ -210,12 +210,12 @@
       <div class="contacts__map">
         <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1323589223423!2d30.328649077075422!3d59.91335066413649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1693837454451!5m2!1sru!2sru" width="320" height="372" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Карта расположения магазина Ягода."></iframe>
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1150px)" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" width="527" height="457">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" width="527" height="457">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" width="768" height="457">
           <source type="image/webp" srcset="img/content/map-mobile@1x.webp 1x, img/content/map-mobile@2x.webp 2x" width="320" height="454">
           <source media="(min-width: 1150px)" srcset="img/content/map-desktop@1x.png 1x, img/content/map-desktop@2x.png 2x" width="527" height="457">
           <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.png 1x, img/content/map-tablet@2x.png 2x" width="768" height="457">
-          <img class="contacts__map-image" src="img/content/map-mobile@1x.png" srcset="img/content/map-mobile@2x.png 2x" width="320" height="454" alt="Карта расположения магазина Мишка." loading="lazy"> -->
+          <img class="contacts__map-image" src="img/content/map-mobile@1x.png" srcset="img/content/map-mobile@2x.png 2x" width="320" height="454" alt="Карта расположения магазина Мишка." loading="lazy">
         </picture>
       </div>
     </section>
@@ -223,7 +223,7 @@
   <footer class="page__page-footer page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo logo" href="index.html" aria-label="Перейти на главную страницу интернет-магазина Ягода.">
-        <img class="logo__img" src="" alt="Логотип интернет-магазина Ягода." width="52" height="52">
+        <img class="logo__img" src="img/content/adaptive-svg/logo-yagoda.svg" alt="Логотип интернет-магазина Ягода." width="52" height="52">
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -244,7 +244,7 @@
       </ul>
       <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener" aria-label="Перейти на сайт компании-разработчика HTML Academy.">
         <span class="page-footer__copyright-text">HTML Academy</span>
-        <img class="page-footer__copyright-logo" src="" alt="Логотип HTML Academy." width="20" height="24">
+        <img class="page-footer__copyright-logo" src="img/content/htmlacademy.svg" alt="Логотип HTML Academy." width="20" height="24">
       </a>
     </div>
   </footer>

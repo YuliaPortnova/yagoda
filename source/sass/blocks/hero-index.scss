@@ -1,0 +1,13 @@
+.hero-index__item {
+  font-size: 16px;
+
+  @media (min-width: $vp-768) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 52px;
+    line-height: normal;
+  }
+}
