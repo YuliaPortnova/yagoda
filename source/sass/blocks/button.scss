@@ -1,6 +1,7 @@
 .button {
   display: inline-flex;
   justify-content: center;
+  padding: 16px;
 
   font-size: 20px;
   font-family: inherit;
@@ -11,52 +12,23 @@
 
   background-color: $color-accent-purple;
   border: none;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
   cursor: pointer;
 
   &--size-xl {
     @media (min-width: $vp-768) {
       font-size: 28px;
       letter-spacing: 1.4px;
+      padding: 24px;
     }
   }
 
-  //   &--neutral {
-  //     padding: 14px 20px;
+  &:hover {
+    background-color: $color-purple-hover;
+  }
 
-  //     color: $color-charcoal;
-
-  //     border: 2px solid $color-charcoal;
-
-  //     transition: color 0.3s, background-color 0.3s;
-
-  //     &:hover {
-  //       color: $color-white;
-
-  //       background-color: $color-charcoal;
-  //     }
-
-  //     &:active {
-  //       color: rgba($color-white, 0.3);
-
-  //       background-color: $color-charcoal;
-  //     }
-  //   }
-
-  //   &--bright {
-  //     padding: 18px;
-
-  //     color: $color-white;
-
-  //     background-color: $color-downy;
-
-  //     transition: opacity 0.3s, background-color 0.3s;
-
-  //     &:hover {
-  //       background-color: $color-puerto-rico;
-  //     }
-
-  //     &:active {
-  //       opacity: 0.5;
-  //     }
-  //   }
+  &:active {
+    background-color: $color-purple-disabled;
+  }
 }

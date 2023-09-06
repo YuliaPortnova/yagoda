@@ -2,8 +2,12 @@
 $color-black:              #000000;
 $color-white:              #ffffff;
 $color-white-alice-blue:   #fbfcfe;
+$color-white-background:   #f1f6fc;
 $color-accent-deep-sea:    #0f805d;
+$color-hover-green:        #7bdb0a;
 $color-accent-purple:      #6a107a;
+$color-purple-hover:       #b22ec8;
+$color-purple-disabled:    rgba(106, 16, 122, 0.60);
 $color-error:              #ff8282;
 
 
@@ -14,3 +18,6 @@ $vp-1440:                    1440px;
 //Fonts
 $ff-comfortaa:              "Comfortaa", "Arial", sans-serif;
 $ff-raleway:                "Raleway", "Arial", sans-serif;
+
+//Decor
+$border-radius:             40px;

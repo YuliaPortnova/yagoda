@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/comfortaa-400.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Ягода</title>
   <meta name="description" content="Проект HTML Academy: Ягода. HTML и CSS. Адаптивная вёрстка и автоматизация. Грейдирование.">
   <!-- <link rel="icon" href="favicon.ico">
@@ -19,7 +19,7 @@
   <header class="page__main-header main-header no-js">
     <nav class="main-header__nav">
       <span class="main-header__logo logo">
-        <img class="logo__img" src="img/content/adaptive-svg/logo-yagoda.svg" alt="Логотип интернет-магазина Ягода." width="52" height="52">
+        <svg class="logo__img" role="img" aria-label="Логотип интернет-магазина Ягода." width="135" height="52"></svg>
       </span>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть или закрыть меню навигации по сайту.</span>
@@ -45,9 +45,9 @@
       <div class="hero-index__wrapper">
         <h1 class="hero-index__title title">Ягоды с&nbsp;доставкой</h1>
         <ul class="hero-index__list">
-          <li class="hero-index__item">Отборные ягоды</li>
-          <li class="hero-index__item">Натуральный вкус сохранён методом шоковой заморозки</li>
-          <li class="hero-index__item">Доставка по&nbsp;Санкт-Петербургу</li>
+          <li class="hero-index__item hero-index__item--leaf">Отборные ягоды</li>
+          <li class="hero-index__item hero-index__item--ice">Натуральный вкус сохранён методом шоковой заморозки</li>
+          <li class="hero-index__item hero-index__item--delivery">Доставка по&nbsp;Санкт-Петербургу</li>
         </ul>
         <a class="hero-index__button button button--size-xl" href="form.html">Заказать</a>
       </div>
@@ -58,7 +58,10 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link-img" href="javascript:undefined;">
-              <img class="catalog__img" src="img/content/catalog/raspberries@1x.jpg" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/content/catalog/raspberries@1x.webp 1x, img/content/catalog/raspberries@2x.webp 2x">
+                <img class="catalog__img" src="img/content/catalog/raspberries@1x.jpg" srcset="img/content/catalog/raspberries@2x.jpg 2x" width="264" height="180" loading="lazy">
+              </picture>
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Малина</h3>
@@ -69,7 +72,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link-img" href="javascript:undefined;">
-              <img class="catalog__img" src="img/content/catalog/blackberries@1x.jpg" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/content/catalog/blackberries@1x.webp 1x, img/content/catalog/blackberries@2x.webp 2x">
+                <img class="catalog__img" src="img/content/catalog/blackberries@1x.jpg" srcset="img/content/catalog/blackberries@2x.jpg 2x" width="264" height="180" loading="lazy">
+              </picture>
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Ежевика</h3>
@@ -80,7 +86,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link-img" href="javascript:undefined;">
-              <img class="catalog__img" src="img/content/catalog/cowberries@1x.jpg" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/content/catalog/cowberries@1x.webp 1x, img/content/catalog/cowberries@2x.webp 2x">
+                <img class="catalog__img" src="img/content/catalog/cowberries@1x.jpg" srcset="img/content/catalog/cowberries@2x.jpg 2x" width="264" height="180" loading="lazy">
+              </picture>
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Брусника</h3>
@@ -91,7 +100,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link-img" href="javascript:undefined;">
-              <img class="catalog__img" src="img/content/catalog/strawberries@1x.jpg" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/content/catalog/strawberries@1x.webp 1x, img/content/catalog/strawberries@2x.webp 2x">
+                <img class="catalog__img" src="img/content/catalog/strawberries@1x.jpg" srcset="img/content/catalog/strawberries@2x.jpg 2x" width="264" height="180" loading="lazy">
+              </picture>
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Клубника</h3>
@@ -102,7 +114,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link-img" href="javascript:undefined;">
-              <img class="catalog__img" src="img/content/catalog/cherries@1x.jpg" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/content/catalog/cherries@1x.webp 1x, img/content/catalog/cherries@2x.webp 2x">
+                <img class="catalog__img" src="img/content/catalog/cherries@1x.jpg" srcset="img/content/catalog/cherries@2x.jpg 2x" width="264" height="180" loading="lazy">
+              </picture>
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Вишня</h3>
@@ -113,7 +128,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link-img" href="javascript:undefined;">
-              <img class="catalog__img" src="img/content/catalog/gooseberries@1x.jpg" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/content/catalog/gooseberries@1x.webp 1x, img/content/catalog/gooseberries@2x.webp 2x">
+                <img class="catalog__img" src="img/content/catalog/gooseberries@1x.jpg" srcset="img/content/catalog/gooseberries@2x.jpg 2x" width="264" height="180" loading="lazy">
+              </picture>
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Крыжовник</h3>
@@ -124,7 +142,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link-img" href="javascript:undefined;">
-              <img class="catalog__img" src="img/content/catalog/blueberries@1x.jpg" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/content/catalog/blueberries@1x.webp 1x, img/content/catalog/blueberries@2x.webp 2x">
+                <img class="catalog__img" src="img/content/catalog/blueberries@1x.jpg" srcset="img/content/catalog/blueberries@2x.jpg 2x" width="264" height="180" loading="lazy">
+              </picture>
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Голубика</h3>
@@ -135,7 +156,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link-img" href="javascript:undefined;">
-              <img class="catalog__img" src="img/content/catalog/cranberries@1x.jpg" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/content/catalog/cranberries@1x.webp 1x, img/content/catalog/cranberries@2x.webp 2x">
+                <img class="catalog__img" src="img/content/catalog/cranberries@1x.jpg" srcset="img/content/catalog/cranberries@2x.jpg 2x" width="264" height="180" loading="lazy">
+              </picture>
             </a>
             <a class="catalog__link-subtitle" href="javascript:undefined;">
               <h3 class="catalog__subtitle">Клюква</h3>

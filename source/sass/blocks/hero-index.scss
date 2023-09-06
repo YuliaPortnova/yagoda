@@ -1,5 +1,76 @@
+.hero-index {
+  background-color: #d5dce6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../img/background/hero-strawberries-mobile@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background/hero-strawberries-mobile@2x.jpg");
+  }
+
+  @media (min-width: $vp-768) {
+    background-image: url("../../img/background/hero-strawberries-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background/hero-strawberries-tablet@2x.jpg");
+    }
+  }
+}
+
+.hero-index__wrapper {
+  margin: 0 auto;
+  padding: 68px 27px 68px 28px;
+  min-height: 640px;
+
+  @media (min-width: $vp-768) {
+    padding: 160px 27px 142px 192px;
+    min-height: 924px;
+    max-width: 770px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 172px;
+    padding-right: 7px;
+  }
+}
+
+.hero-index__title {
+  margin: 0 0 32px 0;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 51px;
+  }
+}
+
+.hero-index__list {
+  margin: 0 0 54px 0;
+  padding: 0 28px;
+  list-style-type: none;
+  display: grid;
+  gap: 15px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 21px;
+    gap: 19px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 0 34px;
+    margin-bottom: 55px;
+  }
+}
+
 .hero-index__item {
+  display: flex;
+  align-items: center;
   font-size: 16px;
+  gap: 12px;
 
   @media (min-width: $vp-768) {
     font-size: 18px;
@@ -7,7 +78,39 @@
   }
 
   @media (min-width: $vp-1440) {
-    font-size: 52px;
     line-height: normal;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/icons/stack.svg#icon-green-leaf");
+  }
+
+  &--ice::before {
+    background-image: url("../../img/icons/stack.svg#icon-ice");
+  }
+
+  &--delivery::before {
+    background-image: url("../../img/icons/stack.svg#icon-delivery");
+  }
+}
+
+.hero-index__button {
+  width: 100%;
+  max-width: 336px;
+
+  @media (min-width: $vp-768) {
+    margin-left: 21px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-left: 48px;
   }
 }

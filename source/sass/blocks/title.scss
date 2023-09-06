@@ -3,9 +3,11 @@
   text-align: center;
   font-family: $ff-comfortaa;
   font-size: 36px;
+  font-weight: 400;
 
   @media (min-width: $vp-768) {
     font-size: 48px;
+    line-height: normal;
   }
 
   @media (min-width: $vp-1440) {
