@@ -1,8 +1,144 @@
+.news__wrapper {
+  padding: 0 26px;
+
+  @media (min-width: $vp-1440) {
+    padding: 0 156px;
+  }
+}
+
 .news__title {
+  margin: 0 0 64px 0;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 98px;
+  }
+}
+
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 24px;
+
+  @media (min-width: $vp-768) {
+    gap: 34px 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    gap: 34px 24px;
+  }
+}
+
+.news__item {
+  position: relative;
+
+  display: grid;
+  width: 268px;
+  padding: 30px 18px 68px;
+
+  border: 2px solid $color-accent-deep-sea;
+  border-radius: $border-radius;
+
+  gap: 13px;
+
+  @media (min-width: $vp-768) {
+    width: 348px;
+    padding: 30px 34px 104px;
+
+    gap: 17px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 360px;
+    padding-right: 33px;
+    padding-left: 33px;
+
+    gap: 16px;
+  }
+
+  &:last-child {
+    @media (min-width: $vp-768) {
+      margin-right: 10px;
+    }
+
+    @media (min-width: $vp-1440) {
+      margin-right: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+
+    width: 76px;
+    height: 32px;
+    margin: 0 auto;
+
+    background-image: url("../../img/icons/stack.svg#decor-leaf");
+
+    @media (min-width: $vp-768) {
+      bottom: 40px;
+
+      width: 96px;
+      height: 40px;
+    }
+  }
+}
+
+.news__subtitle {
+  display: flex;
+  align-items: center;
+  min-height: 68px;
+  margin: 0 0 6px 0;
+  padding: 0 12px;
+
+  font-weight: 400;
   font-size: 20px;
   text-align: center;
 
+  justify-self: center;
+
   @media (min-width: $vp-768) {
+    min-height: 100px;
+
     font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 0;
+  }
+}
+
+.news__text {
+  min-height: 180px;
+  margin: 0;
+
+  @media (min-width: $vp-768) {
+    min-height: 196px;
+
+    line-height: 20px;
+  }
+}
+
+.news__date {
+  display: block;
+
+  text-align: right;
+
+  @media (min-width: $vp-768) {
+    line-height: 20px;
   }
 }

@@ -8,6 +8,7 @@
   font-size: 14px;
   line-height: normal;
   font-family: $ff-raleway;
+  background-color: $color-white-alice-blue;
 
   @media (min-width: $vp-768) {
     font-size: 16px;
@@ -18,10 +19,38 @@
   flex-grow: 1;
 }
 
-.page__hero-index {
-  margin-bottom: 53px;
-}
-
 .page__page-footer {
   margin-top: auto;
+}
+
+.page__decor {
+  padding-top: 64px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 100px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 288px;
+    height: 32px;
+    background-image: url("../../img/icons/stack.svg#line-leaf");
+    background-repeat: no-repeat;
+    margin: 0 auto 64px;
+
+    @media (min-width: $vp-768) {
+      width: 296px;
+      height: 42px;
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $vp-1440) {
+      margin-bottom: 98px;
+    }
+  }
+}
+
+.page__contacts {
+  margin-bottom: 64px;
 }

@@ -42,14 +42,14 @@
 
   @media (min-width: $vp-768) {
     display: grid;
-    padding: 22px 26px;
+    padding: 20px 26px;
 
     gap: 5px 70px;
     grid-template-columns: 150px 1fr;
   }
 
   @media (min-width: $vp-1440) {
-    padding: 24px 192px 24px 156px;
+    padding: 24px 192px 20px 156px;
   }
 
   .no-js & {
