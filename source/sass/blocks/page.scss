@@ -8,6 +8,7 @@
   font-size: 14px;
   line-height: normal;
   font-family: $ff-raleway;
+
   background-color: $color-white-alice-blue;
 
   @media (min-width: $vp-768) {
@@ -32,12 +33,14 @@
 
   &::before {
     content: "";
+
     display: block;
     width: 288px;
     height: 32px;
+    margin: 0 auto 64px;
+
     background-image: url("../../img/icons/stack.svg#line-leaf");
     background-repeat: no-repeat;
-    margin: 0 auto 64px;
 
     @media (min-width: $vp-768) {
       width: 296px;
@@ -47,10 +50,15 @@
 
     @media (min-width: $vp-1440) {
       margin-bottom: 98px;
+      grid-column: 1/-1;
     }
   }
 }
 
 .page__contacts {
   margin-bottom: 64px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 100px;
+  }
 }

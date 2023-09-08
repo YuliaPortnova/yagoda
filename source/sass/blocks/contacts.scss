@@ -1,13 +1,53 @@
+.contacts {
+  @media (min-width: $vp-768) {
+    padding-top: 110px;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: grid;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 101px 156px 100px;
+
+    gap: 0 23px;
+    grid-template-columns: 552px 1fr;
+  }
+}
+
+.contacts__wrapper {
+  margin: 0 auto;
+  padding: 2px 26px 24px;
+
+  @media (min-width: $vp-768) {
+    padding: 2px 188px 40px 180px;
+  }
+
+  @media (min-width: $vp-1440) {
+    order: 1;
+    padding: 25px 0 0 0;
+  }
+}
+
 .contacts__title {
   margin: 0 5px 64px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 auto 71px auto;
+    padding-right: 4px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin: 0 0 48px 0;
+    padding-right: 0;
+  }
 }
 
 .contacts__address {
   font-style: normal;
-}
 
-.contacts__wrapper {
-  padding: 24px 26px 24px;
+  @media (min-width: $vp-1440) {
+    padding-left: 97px;
+  }
 }
 
 .contacts__description {
@@ -17,7 +57,13 @@
   text-align: center;
 
   @media (min-width: $vp-768) {
+    margin-bottom: 21px;
+
     font-size: 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    text-align: left;
   }
 }
 
@@ -43,20 +89,21 @@
     width: 32px;
     height: 32px;
 
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: $color-black;
+    mask-repeat: no-repeat;
+    mask-position: center;
   }
 
   &--address::before {
-    background-image: url("../../img/icons/stack.svg#icon-leaf");
+    mask-image: url("../../img/icons/stack.svg#icon-leaf");
   }
 
   &--phone::before {
-    background-image: url("../../img/icons/stack.svg#icon-call");
+    mask-image: url("../../img/icons/stack.svg#icon-call");
   }
 
   &--email::before {
-    background-image: url("../../img/icons/stack.svg#icon-email");
+    mask-image: url("../../img/icons/stack.svg#icon-email");
   }
 }
 
@@ -68,6 +115,14 @@
   &:active {
     color: $color-accent-deep-sea;
   }
+}
+
+.contacts__link:hover::before {
+  background-color: $color-hover-green;
+}
+
+.contacts__link:active::before {
+  background-color: $color-accent-deep-sea;
 }
 
 .contacts__map {
@@ -96,7 +151,8 @@
 
 .contacts__map-image {
   display: block;
-  object-fit: cover;
   width: 100%;
   max-height: 372px;
+
+  object-fit: cover;
 }

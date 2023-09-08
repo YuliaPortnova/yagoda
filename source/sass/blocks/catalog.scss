@@ -35,17 +35,18 @@
   gap: 24px;
 
   @media (min-width: $vp-768) {
-    grid-template-columns: 1fr 1fr;
     gap: 52px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $vp-1440) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 52px 24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .catalog__item {
+  display: grid;
   padding-bottom: 54px;
   overflow: hidden;
 
@@ -56,7 +57,7 @@
     display: none;
 
     @media (min-width: $vp-768) {
-      display: block;
+      display: grid;
     }
   }
 }
@@ -64,16 +65,34 @@
 .catalog__link-img {
   display: block;
   margin-bottom: 28px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .catalog__img {
   display: block;
+  width: 100%;
 }
 
 .catalog__link-subtitle {
   margin-bottom: 28px;
 
+  color: $color-accent-deep-sea;
   text-decoration: none;
+
+  &:hover {
+    color: $color-hover-green;
+  }
+
+  &:active {
+    color: $color-green-disabled;
+  }
 }
 
 .catalog__subtitle {
@@ -85,18 +104,19 @@
   font-size: 28px;
   line-height: 33px;
   text-align: center;
-  color: $color-accent-deep-sea;
 }
 
 .catalog__text {
   display: flex;
   flex-wrap: wrap;
-  gap: 19px;
-  margin: 0 0 38px 0;
+  justify-content: center;
+  margin: auto 0 38px 0;
   padding-right: 40px;
   padding-left: 40px;
 
-  justify-content: center;
+  text-align: center;
+
+  gap: 19px;
 }
 
 .catalog__price {
@@ -105,8 +125,9 @@
 }
 
 .catalog__button {
-  margin: 0 20px 0 24px;
+  align-self: end;
   width: 220px;
+  margin: 0 auto;
   padding-top: 13px;
   padding-bottom: 14px;
 }

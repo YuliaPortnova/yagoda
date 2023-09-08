@@ -1,55 +1,74 @@
-// .social {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   padding: 18px 0 20px 0;
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-//   list-style-type: none;
+  list-style-type: none;
+  padding: 0;
 
-//   gap: 15px;
+  gap: 20px;
 
-//   @media (min-width: $vp-768) {
-//     padding: 0;
-//   }
-// }
+  @media (min-width: $vp-768) {
+    gap: 32px;
+  }
+}
 
-// .social__link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 42px;
-//   height: 42px;
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid $color-accent-deep-sea;
 
-//   &::before {
-//     content: "";
+  @media (min-width: $vp-768) {
+    width: 40px;
+    height: 40px;
+  }
 
-//     display: block;
-//     width: 28px;
-//     height: 22px;
+  &:hover {
+    border-color: $color-hover-green;
+  }
 
-//     background-color: $color-aubergine;
+  &:active {
+    border-color: $color-green-disabled;
+  }
 
-//     mask-position: center;
-//     mask-repeat: no-repeat;
-//   }
-// }
+  &::before {
+    content: "";
 
-// .social__link--vk::before {
-//   mask-image: url("../img/stack.svg#vkontakte");
-// }
+    display: block;
 
-// .social__link--youtube::before {
-//   mask-image: url("../img/stack.svg#youtube");
-// }
+    background-color: $color-accent-deep-sea;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+}
 
-// .social__link--telegram::before {
-//   mask-image: url("../img/stack.svg#telegram");
-// }
+.social__link:hover::before {
+  background-color: $color-hover-green;
+}
 
-// .social__link:hover::before {
-//   background-color: $color-puerto-rico-2;
-// }
+.social__link:active::before {
+  background-color: $color-green-disabled;
+}
 
-// .social__link:active::before {
-//   opacity: 0.3;
-// }
+.social__link--telegram::before {
+  mask-image: url("../../img/icons/stack.svg#telegram");
+  width: 19px;
+  height: 19px;
+}
+
+.social__link--vk::before {
+  mask-image: url("../../img/icons/stack.svg#vkontakte");
+  width: 19px;
+  height: 15px;
+}
+
+.social__link--youtube::before {
+  mask-image: url("../../img/icons/stack.svg#youtube");
+  width: 19px;
+  height: 19px;
+}
+

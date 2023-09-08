@@ -5,9 +5,10 @@ $color-white-alice-blue:   #fbfcfe;
 $color-white-background:   #f1f6fc;
 $color-accent-deep-sea:    #0f805d;
 $color-hover-green:        #7bdb0a;
+$color-green-disabled:     rgba($color-accent-deep-sea, 0.50);
 $color-accent-purple:      #6a107a;
 $color-purple-hover:       #b22ec8;
-$color-purple-disabled:    rgba(106, 16, 122, 0.60);
+$color-purple-disabled:    rgba($color-accent-purple, 0.60);
 $color-error:              #ff8282;
 
 
