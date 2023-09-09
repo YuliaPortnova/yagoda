@@ -1,0 +1,21 @@
+.logo {
+  display: block;
+  width: 52px;
+  height: 52px;
+  color: $color-accent-deep-sea;
+  overflow: hidden;
+
+  @media (min-width: $vp-768) {
+    width: 135px;
+    height: 60px;
+  }
+}
+
+.logo__img {
+  display: block;
+
+  @media (min-width: $vp-768) {
+    width: 135px;
+    height: 60px;
+  }
+}

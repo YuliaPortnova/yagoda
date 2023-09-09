@@ -70,7 +70,7 @@ export function createWebp () {
 }
 
 export function optimizeVector () {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/**/*.svg', '!source/img/adaptive-svg/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/**/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
@@ -87,7 +87,6 @@ export function copyAssets () {
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
-    'source/img/content/adaptive-svg/logo-yagoda.svg',
   ], {
     base: 'source'
   })
