@@ -1,13 +1,10 @@
 .contacts {
-  @media (min-width: $vp-768) {
-    padding-top: 110px;
-  }
-
   @media (min-width: $vp-1440) {
     display: grid;
+    align-items: start;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 101px 156px 100px;
+    padding: 142px 156px 100px;
 
     gap: 0 23px;
     grid-template-columns: 552px 1fr;
@@ -16,15 +13,30 @@
 
 .contacts__wrapper {
   margin: 0 auto;
-  padding: 2px 26px 24px;
+  padding: 120px 26px 24px;
 
   @media (min-width: $vp-768) {
-    padding: 2px 188px 40px 180px;
+    padding: 117px 188px 40px 180px;
   }
 
   @media (min-width: $vp-1440) {
     order: 1;
-    padding: 25px 0 0 0;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .contacts--inner & {
+    padding-left: 24px;
+    padding-top: 93px;
+
+    @media (min-width: $vp-768) {
+      padding-left: 180px;
+      padding-top: 117px;
+    }
+
+    @media (min-width: $vp-1440) {
+      padding: 0;
+    }
   }
 }
 
@@ -90,8 +102,9 @@
     height: 32px;
 
     background-color: $color-black;
-    mask-repeat: no-repeat;
+
     mask-position: center;
+    mask-repeat: no-repeat;
   }
 
   &--address::before {

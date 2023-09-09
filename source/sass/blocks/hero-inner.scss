@@ -1,11 +1,64 @@
-.hero-inner__title {
+.hero-inner {
+  background-image: url("../../img/background/hero-cowberries-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background/hero-cowberries-mobile@2x.jpg");
+  }
+
   @media (min-width: $vp-768) {
+    background-image: url("../../img/background/hero-cowberries-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background/hero-cowberries-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    background-image: url("../../img/background/hero-cowberries-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background/hero-cowberries-desktop@2x.jpg");
+    }
+  }
+}
+
+.hero-inner__wrapper {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 58% 49px 0;
+
+  @media (min-width: $vp-768) {
+    padding-top: 39%;
+  }
+
+  @media (min-width: $vp-1440) {
+    max-width: 648px;
+    padding-top: 21%;
+  }
+}
+
+.hero-inner__title {
+  margin: 0 0 32px 0;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 48px;
+
     font-size: 52px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 46px;
   }
 }
 
 .hero-inner__text {
+  margin: 0;
+
   font-size: 16px;
+  text-align: center;
 
   @media (min-width: $vp-768) {
     font-size: 18px;

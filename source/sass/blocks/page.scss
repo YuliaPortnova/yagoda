@@ -14,6 +14,10 @@
   @media (min-width: $vp-768) {
     font-size: 16px;
   }
+
+  &--background-white {
+    background-color: $color-white;
+  }
 }
 
 .page__page-main {
@@ -25,19 +29,19 @@
 }
 
 .page__decor {
-  padding-top: 64px;
-
-  @media (min-width: $vp-768) {
-    padding-top: 100px;
-  }
+  position: relative;
 
   &::before {
     content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 
     display: block;
     width: 288px;
     height: 32px;
-    margin: 0 auto 64px;
+    margin: 0 auto;
 
     background-image: url("../../img/icons/stack.svg#line-leaf");
     background-repeat: no-repeat;
@@ -45,14 +49,44 @@
     @media (min-width: $vp-768) {
       width: 296px;
       height: 42px;
-      margin-bottom: 72px;
-    }
-
-    @media (min-width: $vp-1440) {
-      margin-bottom: 98px;
-      grid-column: 1/-1;
     }
   }
+}
+
+.page__hero-inner {
+  margin-bottom: 40px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 46px;
+  }
+}
+
+.page__catalog {
+  margin-bottom: 64px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 100px;
+  }
+}
+
+.page__news {
+  margin-bottom: 64px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 100px;
+  }
+}
+
+.page__form {
+  margin-bottom: 89px;
 }
 
 .page__contacts {

@@ -15,7 +15,7 @@
   <!-- <link rel="manifest" href="manifest.webmanifest"> -->
 </head>
 
-<body class="page">
+<body class="page page--background-white">
   <header class="page__main-header main-header no-js">
     <nav class="main-header__nav">
       <a class="main-header__logo logo" href="index.html" aria-label="Перейти на главную страницу интернет-магазина Ягода.">
@@ -47,10 +47,10 @@
         <p class="hero-inner__text">Мы&nbsp;соберем для вас ягоды и&nbsp;доставим их&nbsp;в&nbsp;удобном для вас виде&nbsp;&mdash; свежими или замороженными</p>
       </div>
     </section>
-    <form class="page__form form" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="page__form form page__decor" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__group form__group--berry">
         <legend class="form__legend">Выберите ягоды</legend>
-        <ul class="form__list">
+        <ul class="form__list form__list--columns">
           <li class="form__item">
             <label class="form__element checkbox-input">
               <input class="checkbox-input__input" type="checkbox" name="berry" value="cowberries">
@@ -101,13 +101,13 @@
           </li>
           <li class="form__item">
             <label class="form__element checkbox-input">
-              <input class="checkbox-input__input" type="checkbox" name="berry" value="cloudberries">
+              <input class="checkbox-input__input" type="checkbox" name="berry" value="cloudberries" disabled>
               <span class="checkbox-input__text">морошка</span>
             </label>
           </li>
           <li class="form__item">
             <label class="form__element checkbox-input">
-              <input class="checkbox-input__input" type="checkbox" name="berry" value="bilberries">
+              <input class="checkbox-input__input" type="checkbox" name="berry" value="bilberries" disabled>
               <span class="checkbox-input__text">черника</span>
             </label>
           </li>
@@ -119,19 +119,19 @@
           <li class="form__item">
             <label class="form__element checkbox-input">
               <input class="checkbox-input__input" type="checkbox" name="keeping" value="fresh">
-              <span class="checkbox-input__text">свежие ягоды</span>
+              <span class="checkbox-input__text form__element-text form__element-text">свежие ягоды</span>
             </label>
           </li>
           <li class="form__item">
             <label class="form__element checkbox-input">
               <input class="checkbox-input__input" type="checkbox" name="keeping" value="frozen">
-              <span class="checkbox-input__text">замороженные ягоды</span>
+              <span class="checkbox-input__text form__element-text">замороженные ягоды</span>
             </label>
           </li>
           <li class="form__item">
             <label class="form__element checkbox-input">
               <input class="checkbox-input__input" type="checkbox" name="keeping" value="mix">
-              <span class="checkbox-input__text">ягодные миксы</span>
+              <span class="checkbox-input__text form__element-text">ягодные миксы</span>
             </label>
           </li>
         </ul>
@@ -142,48 +142,51 @@
           <li class="form__item">
             <label class="form__element radio-input">
               <input class="radio-input__input" type="radio" name="delivery" value="St-Petersburg-delivery" checked>
-              <span class="radio-input__text">Доставка</span>
-              <span class="radio-input__text">(по&nbsp;СПБ в&nbsp;пределах КАД)</span>
+              <span class="radio-input__text">Доставка<br>(по&nbsp;СПБ в&nbsp;пределах <br class="not-desktop">КАД)</span>
             </label>
           </li>
           <li>
             <label class="form__element radio-input">
               <input class="radio-input__input" type="radio" name="delivery" value="self-delivery">
-              <span class="radio-input__text">Самовывоз</span>
-              <span class="radio-input__text">(Набережная Обводного канала, 101)</span>
+              <span class="radio-input__text">Самовывоз<br>(Набережная Обводного канала, 101)</span>
             </label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__group form__group--user-contacts">
         <legend class="form__legend">Ваши контакты</legend>
+        <!-- Для вывода состояния ошибки добавьте класс input__input c модификатором error тегу input.input-input -->
         <ul class="form__list">
           <li class="form__field input">
             <label class="input__label">
               <span class="input__text">Имя</span>
-              <sup class="input__asterisk">*</sup>
+              <span class="input__asterisk">*</span>
               <input class="input__input" type="text" name="user-name" placeholder="Как к вам обращаться?" required>
+              <span class="input__error">Подсказка</span>
             </label>
           </li>
           <li class="form__field input">
             <label class="input__label">
               <span class="input__text">Телефон</span>
-              <sup class="input__asterisk">*</sup>
+              <span class="input__asterisk">*</span>
               <input class="input__input" type="tel" name="user-tel" placeholder="+7 ххх ххх хх хх" required>
+              <span class="input__error">Подсказка</span>
             </label>
           </li>
           <li class="form__field input">
             <label class="input__label">
               <span class="input__text">Email</span>
-              <sup class="input__asterisk">*</sup>
+              <span class="input__asterisk">*</span>
               <input class="input__input" type="email" name="user-email" placeholder="Ваш email" required>
+              <span class="input__error">Подсказка</span>
             </label>
           </li>
-          <li class="form__field input">
+          <li class="form__field input form__field--textarea">
             <label class="input__label">
               <span class="input__text">Адрес</span>
-              <sup class="input__asterisk">*</sup>
+              <span class="input__asterisk">*</span>
               <textarea class="input__input input__textarea input__textarea--address" name="address" placeholder="Адрес в Санкт-Петербурге"></textarea>
+              <span class="input__error">Подсказка</span>
             </label>
           </li>
         </ul>
@@ -197,7 +200,7 @@
       </fieldset>
       <button class="form__button button button--size-xl" type="submit">Заказать</button>
     </form>
-    <section class="page__contacts contacts">
+    <section class="page__contacts page__decor contacts contacts--inner">
       <div class="contacts__wrapper">
         <h2 class="contacts__title title">Где забрать ягоды?</h2>
         <address class="contacts__address">

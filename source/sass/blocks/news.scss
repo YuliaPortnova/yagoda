@@ -1,8 +1,12 @@
 .news__wrapper {
-  padding: 0 26px;
+  padding: 96px 26px 0;
+
+  @media (min-width: $vp-768) {
+    padding-top: 114px;
+  }
 
   @media (min-width: $vp-1440) {
-    padding: 0 156px;
+    padding: 140px 156px 0;
   }
 }
 
@@ -65,7 +69,7 @@
     gap: 16px;
   }
 
-  &:last-child {
+  &:last-child:nth-child(odd) {
     @media (min-width: $vp-768) {
       margin-right: 10px;
     }
