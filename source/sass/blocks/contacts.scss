@@ -16,7 +16,7 @@
   padding: 120px 26px 24px;
 
   @media (min-width: $vp-768) {
-    padding: 117px 188px 40px 180px;
+    padding: 113px 188px 40px 180px;
   }
 
   @media (min-width: $vp-1440) {
@@ -26,12 +26,12 @@
   }
 
   .contacts--inner & {
-    padding-left: 24px;
     padding-top: 93px;
+    padding-left: 24px;
 
     @media (min-width: $vp-768) {
-      padding-left: 180px;
       padding-top: 117px;
+      padding-left: 180px;
     }
 
     @media (min-width: $vp-1440) {
@@ -44,7 +44,7 @@
   margin: 0 5px 64px 0;
 
   @media (min-width: $vp-768) {
-    margin: 0 auto 71px auto;
+    margin: 0 auto 76px auto;
     padding-right: 4px;
   }
 
@@ -66,6 +66,7 @@
   margin: 0 0 34px 0;
 
   font-size: 16px;
+  line-height: 18px;
   text-align: center;
 
   @media (min-width: $vp-768) {
@@ -77,18 +78,31 @@
   @media (min-width: $vp-1440) {
     text-align: left;
   }
+
+  .contacts--inner & {
+    margin-bottom: 38px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 21px;
+    }
+  }
 }
 
 .contacts__text {
   display: grid;
   align-items: center;
-  margin-bottom: 12px;
+  margin: 0 0 10px 0;
 
+  line-height: 16px;
   color: $color-black;
   text-decoration: none;
 
   gap: 4px;
   grid-template-columns: 32px 1fr;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 11px;
+  }
 
   &:last-child {
     margin-bottom: 0;

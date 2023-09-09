@@ -2,12 +2,21 @@
   display: block;
   width: 52px;
   height: 52px;
-  color: $color-accent-deep-sea;
   overflow: hidden;
+
+  color: $color-accent-deep-sea;
 
   @media (min-width: $vp-768) {
     width: 135px;
     height: 60px;
+  }
+
+  &[href]:hover {
+    color: $color-hover-green;
+  }
+
+  &[href]:active {
+    color: $color-green-disabled;
   }
 }
 

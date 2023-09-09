@@ -1,9 +1,9 @@
 .hero-index {
   background-color: #d5dce6;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   background-image: url("../../img/background/hero-strawberries-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/background/hero-strawberries-mobile@2x.jpg");
@@ -27,20 +27,20 @@
 }
 
 .hero-index__wrapper {
+  min-height: 640px;
   margin: 0 auto;
   padding: 68px 27px 68px 28px;
-  min-height: 640px;
 
   @media (min-width: $vp-768) {
-    padding: 143px 27px 142px 192px;
-    min-height: 924px;
     max-width: 770px;
+    min-height: 924px;
+    padding: 143px 27px 142px 192px;
   }
 
   @media (min-width: $vp-1440) {
+    min-height: 801px;
     padding-top: 172px;
     padding-right: 7px;
-    min-height: 801px;
   }
 }
 
@@ -48,7 +48,7 @@
   margin: 0 0 32px 0;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: $vp-1440) {
@@ -57,28 +57,34 @@
 }
 
 .hero-index__list {
-  margin: 0 0 54px 0;
-  padding: 0 28px;
-  list-style-type: none;
   display: grid;
+  margin: 0 0 58px 0;
+  padding: 0 28px;
+
+  list-style-type: none;
+
   gap: 15px;
 
   @media (min-width: $vp-768) {
-    padding: 0 21px;
-    gap: 19px;
     margin-bottom: 49px;
+    padding: 0 21px;
+
+    gap: 19px;
   }
 
   @media (min-width: $vp-1440) {
-    padding: 0 34px;
     margin-bottom: 52px;
+    padding: 0 34px;
   }
 }
 
 .hero-index__item {
   display: flex;
   align-items: center;
+
   font-size: 16px;
+  line-height: 18px;
+
   gap: 12px;
 
   @media (min-width: $vp-768) {
@@ -88,10 +94,11 @@
 
   &::before {
     content: "";
+
     display: block;
+    flex-shrink: 0;
     width: 32px;
     height: 32px;
-    flex-shrink: 0;
   }
 
   &--leaf::before {

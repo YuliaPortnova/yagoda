@@ -1,7 +1,3 @@
-.input__label {
-  cursor: pointer;
-}
-
 .input__text {
   display: inline-flex;
   margin-bottom: 4px;
@@ -9,6 +5,8 @@
 
   font-size: 16px;
   line-height: 20px;
+
+  cursor: pointer;
 
   &--size-small {
     margin-bottom: 8px;
@@ -18,8 +16,8 @@
     line-height: normal;
 
     @media (min-width: $vp-768) {
-      margin-left: 12px;
       margin-bottom: 3px;
+      margin-left: 12px;
 
       font-size: 16px;
       line-height: 20px;
@@ -67,6 +65,7 @@
     color: $color-leaf-grey;
 
     border-color: $color-leaf-grey;
+    cursor: default;
 
     pointer-events: none;
   }

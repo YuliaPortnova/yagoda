@@ -16,9 +16,9 @@
 
   border: 2px solid $color-accent-deep-sea;
   border-radius: 5px;
+  cursor: pointer;
 
   appearance: none;
-  cursor: pointer;
 
   &:hover {
     border-color: $color-hover-green;
@@ -30,14 +30,15 @@
 
   &:disabled {
     border-color: $color-leaf-grey;
-    pointer-events: none;
     opacity: 1;
+
+    pointer-events: none;
   }
 
   &::before {
     content: "";
-    display: none;
 
+    display: none;
     width: 14px;
     height: 11px;
 
@@ -63,7 +64,10 @@
 
 .checkbox-input__text {
   padding: 10px 0 10px 12px;
+
   font-size: 16px;
+  line-height: 19px;
+
   cursor: pointer;
 
   @media (min-width: $vp-768) {

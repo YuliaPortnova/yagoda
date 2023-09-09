@@ -4,6 +4,7 @@
   padding: 16px;
 
   font-size: 20px;
+  line-height: 24px;
   font-family: inherit;
   text-align: center;
   color: $color-white-alice-blue;
@@ -18,9 +19,11 @@
 
   &--size-xl {
     @media (min-width: $vp-768) {
-      font-size: 28px;
-      letter-spacing: 1.4px;
       padding: 18px;
+
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 1.4px;
     }
   }
 
@@ -30,5 +33,11 @@
 
   &:active {
     background-color: $color-purple-disabled;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: $color-purple-disabled;
+    pointer-events: none;
   }
 }

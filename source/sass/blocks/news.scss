@@ -14,11 +14,11 @@
   margin: 0 0 64px 0;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 73px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: $vp-1440) {
-    margin-bottom: 98px;
+    margin-bottom: 94px;
   }
 }
 
@@ -47,7 +47,7 @@
 
   display: grid;
   width: 268px;
-  padding: 30px 18px 68px;
+  padding: 31px 18px 69px;
 
   border: 2px solid $color-accent-deep-sea;
   border-radius: $border-radius;
@@ -110,6 +110,7 @@
 
   font-weight: 400;
   font-size: 20px;
+  line-height: 23px;
   text-align: center;
 
   justify-self: center;
@@ -130,6 +131,8 @@
   min-height: 180px;
   margin: 0;
 
+  line-height: 16px;
+
   @media (min-width: $vp-768) {
     min-height: 196px;
 
@@ -140,6 +143,7 @@
 .news__date {
   display: block;
 
+  line-height: 16px;
   text-align: right;
 
   @media (min-width: $vp-768) {

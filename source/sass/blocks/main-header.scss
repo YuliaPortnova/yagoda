@@ -158,13 +158,13 @@
   width: 100%;
   min-height: 360px;
   margin: 0;
-  padding: 32px 40px;
+  padding: 27px 40px;
 
   list-style-type: none;
 
   background-color: $color-white-background;
 
-  gap: 28px;
+  gap: 19px;
 
   @media (min-width: $vp-768) {
     position: static;
