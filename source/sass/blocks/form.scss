@@ -64,7 +64,7 @@
     margin-bottom: 13px;
 
     @media (min-width: $vp-768) {
-      margin-bottom: 19px;
+      margin-bottom: 21px;
     }
 
     @media (min-width: $vp-1440) {
@@ -84,11 +84,11 @@
     margin-bottom: 31px;
 
     font-size: 28px;
+    line-height: 33px;
   }
 
   @media (min-width: $vp-1440) {
     margin-bottom: 39px;
-    line-height: 33px;
   }
 
   .form__group--delivery & {
@@ -107,13 +107,13 @@
     margin-bottom: 29px;
 
     @media (min-width: $vp-768) {
-      margin-bottom: 40px;
+      margin: 0 auto 40px auto;
 
       text-align: center;
     }
 
     @media (min-width: $vp-1440) {
-      margin-bottom: 50px;
+      margin: 0 0 50px 0;
 
       text-align: left;
     }
