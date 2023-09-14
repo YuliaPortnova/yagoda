@@ -54,6 +54,10 @@
 
   .no-js & {
     display: block;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+    }
   }
 }
 
@@ -196,6 +200,10 @@
     position: static;
 
     margin-top: 7px;
+
+    @media (min-width: $vp-768) {
+      margin-top: 0;
+    }
   }
 }
 
